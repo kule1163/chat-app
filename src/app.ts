@@ -7,7 +7,7 @@ import authRoute from "./routes/auth";
 import chatRoute from "./routes/chat";
 import messageRoute from "./routes/message";
 import { Server, Socket } from "socket.io";
-import { Chat, User } from "../../my-app/src/features/types";
+import { Chat, User } from "../my-app/src/features/types";
 import axios from "axios";
 
 const app = express();

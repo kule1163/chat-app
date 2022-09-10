@@ -1,13 +1,16 @@
 import axios from "axios";
 
 export const httpAuth = axios.create({
-  baseURL: "http://localhost:5000/auth",
+  baseURL: "/auth",
+  headers: { "Content-Type": "multipart/form-data" },
 });
 
 export const httpChat = axios.create({
-  baseURL: "http://localhost:5000/chat",
+  baseURL: "/chat",
+  headers: { "Content-Type": "multipart/form-data" },
 });
 
 export const httpMessage = axios.create({
-  baseURL: "http://localhost:5000/message",
+  baseURL: "/message",
+  headers: { "Content-Type": "multipart/form-data" },
 });
