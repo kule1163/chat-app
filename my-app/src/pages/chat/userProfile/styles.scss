@@ -1,0 +1,25 @@
+@import "../../../sass/main.scss";
+
+.user-profile-container {
+  @extend .g-toggle-container;
+  .user-profile-box {
+    @extend .g-toggle-box;
+    align-items: center;
+    justify-content: center;
+    .profile-header {
+      @extend .g-toggle-header;
+    }
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%
+    }
+    .email {
+      font-size: 1.4em;
+    }
+    .button {
+      margin-left: auto;
+    }
+  }
+}

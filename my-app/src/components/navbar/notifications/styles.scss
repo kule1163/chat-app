@@ -1,0 +1,44 @@
+@import "../../../sass/main.scss";
+
+.notifications-container {
+  position: relative;
+  .badge-box {
+    cursor: pointer;
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+  }
+  .ghost-box {
+    width: 5rem;
+    background-color: transparent;
+    position: absolute;
+    height: $navbar-height;
+    top: 0;
+    right: 0;
+  }
+  .info-box {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 240px;
+    max-width: 300px;
+    background-color: $thirdGrey;
+    border-radius: 10px;
+    right: 0;
+    z-index: 100;
+    padding: 0.7rem;
+    .text-box {
+      background-color: $secondryGrey;
+      border-radius: 10px;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      .text {
+        display: inline-block !important;
+        white-space: pre-line;
+        font-size: 12px;
+        width: 100%;
+        /* color: red; */
+      }
+    }
+  }
+}

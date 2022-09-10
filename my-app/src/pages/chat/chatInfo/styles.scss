@@ -1,0 +1,28 @@
+@import "../../../sass/main.scss";
+
+.last-message-container {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  box-sizing: border-box;
+  gap: 1rem;
+  overflow-y: auto;
+  background-color: $primaryGrey;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .last-message-box {
+    @extend .g-chat-user-container;
+    .user-statu {
+      position: absolute;
+      right: 0.3rem;
+      top: 0.3rem;
+    }
+  }
+}

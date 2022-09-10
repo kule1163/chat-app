@@ -1,0 +1,43 @@
+@import "../../../../sass/main.scss";
+
+.edit-group-chat-container {
+  .admin-skills-box {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .users-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .header {
+      margin-inline: auto;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .user-box {
+      background-color: $primaryBlueGrey;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      .icon-box {
+        margin-left: auto;
+      }
+      .single-user-box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        & img {
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+  .leave-button {
+    margin-left: auto;
+  }
+}

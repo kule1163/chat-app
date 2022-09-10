@@ -1,0 +1,153 @@
+.input-error-message {
+  color: #f44336;
+}
+
+.input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.helper-text {
+  color: #eeeeee;
+  font-size: 0.8em;
+}
+
+.app * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.g-toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.g-toggle-container .g-toggle-box {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 1rem;
+  background-color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.g-toggle-container .g-toggle-box .g-toggle-header {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.authorization-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*   background-image: url("../../../assets/signup.jpg");
+  background-position: center;
+  background-size: cover; */
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .authorization-container {
+    padding: 1rem;
+  }
+}
+
+.authorization-container .authorization-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #2196f3;
+  padding: 2rem;
+  width: 450px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .authorization-container .authorization-box {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .authorization-container .authorization-box {
+    width: 95%;
+    padding-inline: 1rem !important;
+  }
+}
+
+.authorization-container .authorization-box .form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .authorization-container .authorization-box .form-box {
+    padding: 1rem;
+  }
+}
+
+.authorization-container .authorization-box .form-box .icon-box {
+  margin-inline: auto;
+}
+
+.authorization-container .authorization-box .form-box .form-span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.authorization-container .authorization-box .form-box .form-header {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-inline: auto;
+}
+/*# sourceMappingURL=main.css.map */

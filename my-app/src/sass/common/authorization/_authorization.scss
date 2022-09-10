@@ -1,0 +1,58 @@
+.authorization-container {
+  display: flex;
+  /*   background-image: url("../../../assets/signup.jpg");
+  background-position: center;
+  background-size: cover; */
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  @media (max-width: $auth-md) {
+    padding: 1rem;
+  }
+  .authorization-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $primaryBlue;
+    padding: 2rem;
+    width: 450px;
+    box-sizing: border-box;
+    @media (max-width: $auth-md) {
+      width: 85%;
+      height: 100%;
+      margin: auto;
+      border-radius: 10px;
+      overflow-y: auto;
+    }
+    @media (max-width: $auth-sm) {
+      width: 95%;
+      padding-inline: 1rem !important;
+    }
+    .form-box {
+      display: flex;
+      gap: 1.5rem;
+      background-color: white;
+      flex-direction: column;
+      width: 95%;
+      padding: 2rem;
+      box-sizing: border-box;
+      border-radius: 10px;
+      @media (max-width: $auth-sm) {
+        padding: 1rem;
+      }
+      .icon-box {
+        margin-inline: auto;
+      }
+      .form-span {
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .form-header {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-inline: auto;
+      }
+    }
+  }
+}

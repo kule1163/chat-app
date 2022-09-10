@@ -1,0 +1,43 @@
+@import "../../sass/main.scss";
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $navbar-height;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-inline: 1.5rem;
+  position: sticky;
+  background-color: white;
+  padding-block: 0.3rem;
+  z-index: 1000;
+  top: 0;
+  .search-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    .text {
+      font-weight: 600;
+      font-size: 1em;
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+  }
+  .header {
+    font-size: 1.5em;
+  }
+  .features-box {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    .profile-photo {
+      object-fit: cover;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}

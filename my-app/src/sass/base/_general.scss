@@ -1,0 +1,126 @@
+//input
+.input-error-message {
+  color: $primaryRed;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.helper-text {
+  color: $primaryGrey;
+  font-size: 0.8em;
+}
+
+.app {
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+.g-spinner-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include translate(-50%, -50%);
+}
+
+.g-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: $overlay-bg-color;
+  z-index: 10;
+  .g-toggle-box {
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1rem;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    .g-toggle-header-box {
+      display: flex;
+      justify-content: space-between;
+      .g-toggle-header {
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+    }
+    .g-toggle-form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+.g-chat-user-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: $thirdGrey;
+  &:hover {
+    background-color: $primaryTeal;
+  }
+  .g-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .g-chat-user-box {
+    .g-username {
+      font-size: 1.2em;
+    }
+    .g-footer-box {
+      display: flex;
+      font-size: 0.9em;
+      .g-span {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.g-create-group-form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  .g-create-group-input {
+    width: 100%;
+  }
+  .g-create-group-button {
+    background-color: $primaryTeal;
+    color: white;
+    margin-left: auto;
+  }
+}
+
+.none {
+  pointer-events: none;
+}
+
+.g-scrollable-box {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  overflow-y: auto;
+  gap: 0.5rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../../sass/main.scss";
+
+.group-user-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  max-height: 150px;
+  /* overflow: auto; */
+  .group-user-box {
+    background-color: $primaryPurple;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem;
+    display: flex;
+    color: white;
+    .name-text {
+      font-size: 0.8em;
+    }
+  }
+}

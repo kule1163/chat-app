@@ -1,0 +1,29 @@
+//color
+$primaryRed: #f44336;
+$primaryBlue: #2196f3;
+$secondryBlue: #1976d2;
+$primaryLightBlue: #03a9f4;
+$primaryPurple: #9500ae;
+$primaryTeal: #26a69a;
+
+$primaryBlueGrey: #eceff1;
+
+$primaryGrey: #eeeeee;
+$secondryGrey: #e0e0e0;
+$thirdGrey: #bdbdbd;
+
+//navbar
+$navbar-height: 50px;
+
+//auth breakpoints
+$auth-md: 900px;
+$auth-sm: 500px;
+
+//chat breakpoints
+$chat-md: 1000px;
+
+//overlat background
+$overlay-bg-color: rgba(
+  $color: #000000,
+  $alpha: 0.7,
+);

@@ -1,0 +1,14 @@
+@import "../../../../../sass/main.scss";
+
+.edit-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .search-users-container {
+    display: flex;
+    flex-direction: column;
+    .single-search-user-box {
+      @extend .g-chat-user-container;
+    }
+  }
+}
