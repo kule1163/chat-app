@@ -1,5 +1,5 @@
 //socket
-export const ENDPOINT = "http://localhost:5000";
+export const ENDPOINT = "https://batu-chatapp.herokuapp.com/";
 
 //storage
 export const sessionStorageGetUser = () => {
