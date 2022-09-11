@@ -103,7 +103,7 @@ const ChatInfo = () => {
           )}
       </>
     );
-  }, [chats]);
+  }, [chats, user]);
 
   return (
     <>
