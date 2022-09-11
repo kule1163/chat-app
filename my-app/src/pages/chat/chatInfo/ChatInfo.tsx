@@ -18,7 +18,6 @@ import { setCurrentChat } from "../../../features/chat/chatSlice";
 import { fetchChats } from "../../../features/chat/asyncThunks";
 import Spinner from "../../../components/spinner/Spinner";
 import { removeNotification } from "../../../features/auth/ayncThunks";
-import { io } from "socket.io-client";
 import { RiRadioButtonLine } from "react-icons/ri";
 
 const ChatInfo = () => {
@@ -80,7 +79,7 @@ const ChatInfo = () => {
                         {handleDeletedChat(item.deletedInfo, user)
                           ?.isVisibleLatestMessage && (
                           <div data-testid="latest-message">
-                            <Typography>
+                            <Typography className="text">
                               <span className="g-span">
                                 {
                                   handleLatestMessage(item.latestMessage, user)

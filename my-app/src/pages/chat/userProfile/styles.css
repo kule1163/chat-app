@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%);
 }
 
-.g-toggle-container {
+.g-toggle-container, .user-profile-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@
   z-index: 10;
 }
 
-.g-toggle-container .g-toggle-box {
+.g-toggle-container .g-toggle-box, .user-profile-container .g-toggle-box, .user-profile-container .user-profile-box {
   max-height: 80vh;
   overflow-y: auto;
   width: 400px;
@@ -64,7 +64,7 @@
           flex-direction: column;
 }
 
-.g-toggle-container .g-toggle-box .g-toggle-header-box {
+.g-toggle-container .g-toggle-box .g-toggle-header-box, .user-profile-container .g-toggle-box .g-toggle-header-box, .user-profile-container .user-profile-box .g-toggle-header-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,12 +73,12 @@
           justify-content: space-between;
 }
 
-.g-toggle-container .g-toggle-box .g-toggle-header-box .g-toggle-header {
+.g-toggle-container .g-toggle-box .g-toggle-header-box .g-toggle-header, .user-profile-container .g-toggle-box .g-toggle-header-box .g-toggle-header, .user-profile-container .user-profile-box .g-toggle-header-box .g-toggle-header, .g-toggle-container .g-toggle-box .g-toggle-header-box .user-profile-container .user-profile-box .profile-header, .user-profile-container .g-toggle-box .g-toggle-header-box .user-profile-box .profile-header, .user-profile-container .user-profile-box .g-toggle-header-box .profile-header {
   font-size: 1.5em;
   font-weight: 600;
 }
 
-.g-toggle-container .g-toggle-box .g-toggle-form {
+.g-toggle-container .g-toggle-box .g-toggle-form, .user-profile-container .g-toggle-box .g-toggle-form, .user-profile-container .user-profile-box .g-toggle-form {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -266,4 +266,29 @@
   font-weight: 900;
   margin-inline: auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.user-profile-container .user-profile-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-profile-container .user-profile-box .profile-photo {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-profile-container .user-profile-box .email {
+  font-size: 1.4em;
+}
+
+.user-profile-container .user-profile-box .button {
+  margin-left: auto;
+}
+/*# sourceMappingURL=styles.css.map */

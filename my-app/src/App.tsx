@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useEffect } from "react";
 import "./sass/main.scss";
 import { Route, Routes } from "react-router-dom";
 import Register from "./pages/authorization/register/Register";
@@ -7,7 +7,6 @@ import Chat from "./pages/chat/Chat";
 import BackgroundImage from "./assets/background.png";
 import { useAppDispatch } from "./app/hooks";
 import { handleOnlineStatu } from "./features/auth/ayncThunks";
-import { persistor } from ".";
 import io from "socket.io-client";
 import { ENDPOINT } from "./config/config";
 

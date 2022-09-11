@@ -19,6 +19,14 @@
   }
   .last-message-box {
     @extend .g-chat-user-container;
+    .text {
+      width: 25vw;
+      overflow: hidden;
+      white-space: nowrap;
+      @media (max-width: $chat-md) {
+        width: 85vw;
+      }
+    }
     .user-statu {
       position: absolute;
       right: 0.3rem;

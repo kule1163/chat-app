@@ -181,8 +181,6 @@ export const setNotification = expressAsyncHandler(async (req, res) => {
     return;
   }
 
-  console.log(updatedUsers);
-
   const message = await Message.findOne({ _id: messageId });
 
   if (!message) {

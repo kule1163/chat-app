@@ -266,4 +266,71 @@
   font-weight: 900;
   margin-inline: auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-inline: 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  padding-block: 0.3rem;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-container .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.navbar-container .search-box .text {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+@media (max-width: 750px) {
+  .navbar-container .search-box .text {
+    display: none;
+  }
+}
+
+.navbar-container .header {
+  font-size: 1.5em;
+}
+
+.navbar-container .features-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.navbar-container .features-box .profile-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=styles.css.map */

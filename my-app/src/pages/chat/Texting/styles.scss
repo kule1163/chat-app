@@ -37,6 +37,11 @@ $pp-box-gap: 0.5rem;
   }
   .text {
     padding: 0.5rem 1rem;
+    max-width: 40vw;
+    white-space: initial;
+    @media (max-width: $chat-md) {
+      max-width: 65vw;
+    }
   }
   .its-text {
     @extend .text;

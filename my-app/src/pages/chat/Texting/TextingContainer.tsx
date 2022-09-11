@@ -111,7 +111,6 @@ const TextingContainer = ({ socketConnection }: Props) => {
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved: Message) => {
       if (
-        !currentChat ||
         currentChat === null || // if chat is not selected or doesn't match current chat
         currentChat._id !== newMessageRecieved.chat._id
       ) {
@@ -199,6 +198,7 @@ const TextingContainer = ({ socketConnection }: Props) => {
               )}
 
               <Typography
+                sx={{ wordBreak: "break-word" }}
                 data-testid={item.content}
                 className={
                   item.sender._id === user?._id ? "user-text" : "its-text"

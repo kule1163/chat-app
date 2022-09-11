@@ -91,7 +91,7 @@
   gap: 1rem;
 }
 
-.g-chat-user-container {
+.g-chat-user-container, .edit-form-container .search-users-container .single-search-user-box {
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -106,28 +106,28 @@
   background-color: #bdbdbd;
 }
 
-.g-chat-user-container:hover {
+.g-chat-user-container:hover, .edit-form-container .search-users-container .single-search-user-box:hover {
   background-color: #26a69a;
 }
 
-.g-chat-user-container .g-user-photo {
+.g-chat-user-container .g-user-photo, .edit-form-container .search-users-container .single-search-user-box .g-user-photo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-.g-chat-user-container .g-chat-user-box .g-username {
+.g-chat-user-container .g-chat-user-box .g-username, .edit-form-container .search-users-container .single-search-user-box .g-chat-user-box .g-username {
   font-size: 1.2em;
 }
 
-.g-chat-user-container .g-chat-user-box .g-footer-box {
+.g-chat-user-container .g-chat-user-box .g-footer-box, .edit-form-container .search-users-container .single-search-user-box .g-chat-user-box .g-footer-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0.9em;
 }
 
-.g-chat-user-container .g-chat-user-box .g-footer-box .g-span {
+.g-chat-user-container .g-chat-user-box .g-footer-box .g-span, .edit-form-container .search-users-container .single-search-user-box .g-chat-user-box .g-footer-box .g-span {
   font-weight: 900;
 }
 
@@ -266,4 +266,25 @@
   font-weight: 900;
   margin-inline: auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.edit-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.edit-form-container .search-users-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=styles.css.map */

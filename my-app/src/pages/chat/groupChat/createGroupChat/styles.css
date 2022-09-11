@@ -266,4 +266,8 @@
   font-weight: 900;
   margin-inline: auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.form .form-button {
+  margin-left: auto;
+}
+/*# sourceMappingURL=styles.css.map */

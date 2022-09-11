@@ -27,6 +27,8 @@
         padding: 1rem;
         background-color: white;
         box-sizing: border-box;
+        overflow: auto;
+        @include hideScrollbar;
         .chat-g-header-box {
           display: flex;
           flex-grow: 0;

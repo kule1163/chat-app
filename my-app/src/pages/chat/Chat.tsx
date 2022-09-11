@@ -30,11 +30,11 @@ const Chat = () => {
     return () => {
       socket.off("connected");
     };
-  }, []);
+  });
 
   useEffect(() => {
     socket.on("dont allow", (decodedUser) => {
-      if (user && user._id === decodedUser.id) {
+      if (user && user.token === decodedUser.token) {
         sessionStorage.clear();
         persistor.purge();
         window.location.href = "http://localhost:3000/login";

@@ -46,9 +46,11 @@ const UserInfoBox = ({ user, features, setSearchValue }: Props) => {
       >
         <img className="g-user-photo" src={user.profilePhoto.url} />
         <div className="g-chat-user-box">
-          <Typography className="g-username">{user.fullName}</Typography>
+          <Typography sx={{ wordBreak: "break-word" }} className="g-username">
+            {user.fullName}
+          </Typography>
           <div className="g-footer-box">
-            <Typography>
+            <Typography sx={{ wordBreak: "break-word" }}>
               <span className="g-span">Email: </span>
               {user.email}
             </Typography>

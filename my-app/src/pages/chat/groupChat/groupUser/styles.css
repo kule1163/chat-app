@@ -266,4 +266,35 @@
   font-weight: 900;
   margin-inline: auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.group-user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.3em;
+  max-height: 150px;
+  /* overflow: auto; */
+}
+
+.group-user-container .group-user-box {
+  background-color: #9500ae;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem;
+  display: flex;
+  color: white;
+}
+
+.group-user-container .group-user-box .name-text {
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=styles.css.map */

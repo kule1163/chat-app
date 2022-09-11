@@ -151,7 +151,7 @@ if (CONNETION_URL) {
           chat.users.forEach((user) => {
             if (user._id == newMessageRecieved.sender._id) return;
 
-            socket.in(user._id).emit("message recieved", newMessageRecieved);
+            socket.broadcast.emit("message recieved", newMessageRecieved);
           });
         });
         interface AccessChatProps {
@@ -163,7 +163,7 @@ if (CONNETION_URL) {
             chat.users.forEach((user) => {
               if (user._id == sender) return;
 
-              socket.broadcast.to(user._id).emit("get chat", chat);
+              socket.broadcast.emit("get chat", chat);
             });
           }
         });
