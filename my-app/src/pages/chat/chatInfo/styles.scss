@@ -2,13 +2,14 @@
 
 .last-message-container {
   border-radius: 10px;
-  padding: 1rem;
+  padding-block: 1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   height: 100%;
   box-sizing: border-box;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
   overflow-y: auto;
   background-color: $primaryGrey;
   scroll-behavior: smooth;
@@ -18,14 +19,28 @@
     display: none;
   }
   .last-message-box {
+    overflow: hidden;
+    width: 25vw;
+    @media (max-width: $chat-md) {
+      width: 90vw;
+      border: solid red 1px;
+    }
+    @media (max-width: 760px) {
+      width: 85vw;
+      border: solid red 1px;
+    }
+    @media (max-width: 510px) {
+      width: 80vw;
+      border: solid red 1px;
+    }
+    @media (max-width: 400px) {
+      width: 77vw;
+      border: solid red 1px;
+    }
     @extend .g-chat-user-container;
     .text {
-      width: 25vw;
       overflow: hidden;
       white-space: nowrap;
-      @media (max-width: $chat-md) {
-        width: 85vw;
-      }
     }
     .user-statu {
       position: absolute;
