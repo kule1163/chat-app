@@ -37,7 +37,7 @@ const Chat = () => {
       if (user && user.token === decodedUser.token) {
         sessionStorage.clear();
         persistor.purge();
-        window.location.href = "http://localhost:3000/login";
+        window.location.href = "https://batu-chatapp.herokuapp.com/login";
       }
     });
     return () => {

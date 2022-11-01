@@ -46,7 +46,7 @@ const Navbar = () => {
             }
             sessionStorage.clear();
             persistor.purge();
-            window.location.href = "http://localhost:3000/login";
+            window.location.href = "https://batu-chatapp.herokuapp.com/login";
           }}
           data-testid="logout"
           style={{ pointerEvents: `${status === "pending" ? "none" : "all"}` }}
